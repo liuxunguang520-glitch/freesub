@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: 185.197.193.137
-  port: 443
-  uuid: 313b84fa-b922-500f-9b65-acb67c040cc0
+  server: radar.cloudflare.com
+  port: 8080
+  uuid: cfa71937-73d5-4eb8-9b25-eadecd944803
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: us2.v2less.site
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: us2.v2less.site
+      Host: sh-harand.shcharand00.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
